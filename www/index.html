@@ -8,11 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <main class="container">
         <div>
+            <figure>
+                <img src="img/logo.jpg" alt="" class="col-12">
+            </figure>
             <section>
-                <form action="" class="border d-flex flex-row justify-content-center">
-                    <input type="keyword" name="busca10"><button type="submit">
+                <form action="" class="border d-flex flex-row justify-content-center" >
+                    <div class="form-group d-flex flex-row justify-content-center">
+                    <input type="keyword" name="busca10" class="form-control"><button type="submit" class="btn">
                             <?xml version="1.0" encoding="iso-8859-1"?>
                             <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                             <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -33,12 +37,13 @@
                             
                             </svg>
                             </button>
+                    </div>
                 </form>
-                <table>
+                <table class="table">
                     
                 </table>
             </section>
-            <section>
+            <section class="d-flex flex-row justify-content-center">
                 <form action="">
                     <div class="form-group">
                         <input type="text" name="descricao" class="form-control" placeholder="Descrição"><br>
@@ -65,7 +70,7 @@
                     <div class="form-group">
                             <input type="text" name="Vendido" placeholder="Sim/não" class="form-control"><br>
                     </div>
-                    
+                    <button type="submit" class="btn">Cadastra</button>
                 </form>
             </section>
         </div>
