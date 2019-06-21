@@ -14,7 +14,7 @@
                 <img src="img/logo.jpg" alt="" class="col-12">
             </figure>
             <section>
-                <form action="" class="border d-flex flex-row justify-content-center" >
+                <form action="" class=" d-flex flex-row justify-content-center" id="busca">
                     <div class="form-group d-flex flex-row justify-content-center">
                     <input type="keyword" name="busca10" class="form-control"><button type="submit" class="btn">
                             <?xml version="1.0" encoding="iso-8859-1"?>
@@ -39,44 +39,70 @@
                             </button>
                     </div>
                 </form>
+                <div class="table-responsive">
                 <table class="table">
                     
                 </table>
+                </div>
             </section>
             <section class="d-flex flex-row justify-content-center">
-                <form action="">
-                    <div class="form-group">
-                        <input type="text" name="descricao" class="form-control" placeholder="Descrição"><br>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+                    Cadastra
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" id="form">
+                                    <div class="form-group">
+                                        <input type="text" name="descricao" class="form-control" placeholder="Descrição" ><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="marca" placeholder="Marca" class="form-control"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="tipo" placeholder="Tipo de veículo" class="form-control"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="quantidade" placeholder="Quatidade de passageiros" class="form-control"><br>
+                                
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="valor" placeholder="valor de venda" class="form-control"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="valor01" placeholder="Valor da compra" class="form-control"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="data" placeholder="Data da compra" class="form-control"><br>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="Vendido" placeholder="Sim/não" class="form-control"><br>
+                                    </div>
+                                    <input type="hidden" name="Cadastra" value="Cadastra">
+                                    <button type="submit" class="btn">Cadastra</button>
+                                </form>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="form-group">
-                            <input type="text" name="marca" placeholder="Marca" class="form-control"><br>
-                    </div>
-                    <div class="form-group">
-                            <input type="text" name="tipo" placeholder="Tipo de veículo" class="form-control"><br>
-                    </div>
-                    <div class="form-group">
-                            <input type="text" name="quatidade" placeholder="Quatidade de passageiros" class="form-control"><br>
-
-                    </div>
-                    <div class="form-group">
-                            <input type="text" name="valor" placeholder="valor de venda" class="form-control"><br>
-                    </div>
-                    <div class="form-group">
-                            <input type="text" name="valor01" placeholder="Valor da compra" class="form-control"><br>
-                    </div>
-                    <div class="form-group">
-                            <input type="text" name="data" placeholder="Data da compra" class="form-control"><br>
-                    </div>
-                    <div class="form-group">
-                            <input type="text" name="Vendido" placeholder="Sim/não" class="form-control"><br>
-                    </div>
-                    <button type="submit" class="btn">Cadastra</button>
-                </form>
+                </div>
+               
             </section>
         </div>
     </main>
     <script src="jquery/jquery.js"></script>
-    <script src="js/bootstrap.mim.js"></script>
-    <script src="js/popper.mim.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
